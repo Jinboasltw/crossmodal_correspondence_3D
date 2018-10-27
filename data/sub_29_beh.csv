@@ -1,0 +1,5 @@
+Row,motion_motion_near_sound_increase,motion_motion_near_sound_decrease,motion_motion_near_no,motion_motion_far_sound_increase,motion_motion_far_sound_decrease,motion_motion_far_no,snd_snd_increase_motion_near,snd_snd_increase_motion_far,snd_snd_increase_no,snd_snd_decrease_motion_near,snd_snd_decrease_motion_far,snd_snd_decrease_no
+code,111,112,113,121,122,123,211,212,213,221,222,223
+acc,1,1,0.966666666666667,0.9,0.933333333333333,0.9,1,1,1,0.966666666666667,0.966666666666667,0.9
+mean,674.0362,661.077733333333,690.802206896552,630.341692307692,665.167892857143,636.13637037037,455.768137931034,475.746275862069,471.5227,454.699172413793,447.582642857143,421.758807692308
+median,637.961,662.234,677.62,621.11,648.2155,650.644,439.403,474.138,458.269,433.551,447.624,398.41

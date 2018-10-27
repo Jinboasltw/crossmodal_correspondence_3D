@@ -16,15 +16,15 @@ for ii=1:numel(targetData)
     %% RT
     clear temp i j k l
     l=1; % setup for summary data
-    temp = rawData(rawData.RT >= 100 & rawData.RT <= 1500 & rawData.ACC == 1, :);
+    temp = rawData(rawData.RT >= 100 & rawData.RT <= 2000 & rawData.ACC == 1, :);
     [rt_mean, rt_std, ~] = grpstats(temp.RT, {temp.task_type,temp.main_stimulus,temp.irrelevant_stimulus},{'mean','std', 'gname'});
-    sd_2_5 = [rt_mean-2.5*rt_std rt_mean+2.5*rt_std];
+    sd_3 = [rt_mean-2.99*rt_std rt_mean+2.99*rt_std];
     for i=1:2
         for j=1:2
             for k=1:3
                 disp([i j k]);
                 temp_single = extractResp(temp,[i j k]);
-                clearTemp = clearResp(temp_single,sd_2_5,l);
+                clearTemp = clearResp(temp_single,sd_3,l);
                 meanData(l)=mean(clearTemp);
                 medianData(l)=median(clearTemp);
                 l=l+1;
